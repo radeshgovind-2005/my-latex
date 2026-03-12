@@ -1,0 +1,190 @@
+%==============================================================
+%  CV — Radesh Govind
+%  pdflatex CV-Radesh_Govind.tex
+%  To adapt per role: edit \ROLETITLE and \SUMMARY (~line 55)
+%==============================================================
+\documentclass[9.5pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[
+  top=0.58in, bottom=0.58in,
+  left=0.70in, right=0.70in
+]{geometry}
+
+% ── Font: Source Sans Pro ─────────────────────────────────────
+\usepackage[default]{sourcesanspro}
+\usepackage{soul}
+
+% ── Core packages ─────────────────────────────────────────────
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{fontawesome5}
+\usepackage{setspace}
+\usepackage{calc}
+\usepackage{array}
+
+% ── Palette ───────────────────────────────────────────────────
+\definecolor{navy}{HTML}{1C2B4A}
+\definecolor{body}{HTML}{2C2C2C}
+\definecolor{soft}{HTML}{6B7280}
+\definecolor{rule}{HTML}{D1D5DB}
+\definecolor{link}{HTML}{2563EB}
+
+\color{body}
+\hypersetup{urlcolor=link}
+
+% ── Spacing ───────────────────────────────────────────────────
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% ── Section titles ────────────────────────────────────────────
+\titleformat{\section}
+  {\centering\fontsize{14.4pt}{7.2pt}\selectfont\bfseries\color{soft}}
+  {}{0em}{\textls[200]{\MakeUppercase}}
+  [\vspace{2pt}\textcolor{rule}{\rule{\linewidth}{0.5pt}}]
+
+% ── Lists ─────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1em,
+  itemsep=1.5pt,
+  topsep=3pt,
+  parsep=0pt,
+  label={\textcolor{soft}{\tiny\raisebox{1pt}{$\bullet$}}}
+}
+
+% ── Entry macro (title | date, subtitle) ──────────────────────
+\newcommand{\entry}[3]{%
+  \noindent{\textbf{#1}}\hfill{\small\textcolor{soft}{#3}}\\[-1pt]
+  {\small\textcolor{soft}{#2}}\par\vspace{1pt}%
+}
+
+% ── Project entry ─────────────────────────────────────────────
+\newcommand{\project}[2]{%
+  \noindent{\textbf{#1}}\hfill{\small\textcolor{soft}{#2}}\par%
+}
+
+%==============================================================
+%  ▼▼  EDIT PER ROLE  ▼▼
+%==============================================================
+\newcommand{\SUMMARY}{%
+  Final-year BSc Computer Science Engineering student at ISEL with a focus on
+  building high-integrity, scalable distributed systems. Experienced in
+  \textbf{Kotlin}, \textbf{Java}, and \textbf{TypeScript}, with hands-on backend cloud-native architecture, 
+  AI-integrated pipelines, multiplatform development, and production observability. 
+}
+
+%==============================================================
+
+\begin{document}
+\pagestyle{empty}
+
+%──────────────────────────────────────────────────────────────
+%  HEADER
+%──────────────────────────────────────────────────────────────
+\begin{center}
+  {\fontsize{26pt}{26pt}\selectfont\color{navy} Radesh Govind — Software Engineer}
+  \\[7pt]
+  {\footnotesize\textcolor{soft}{%
+    \faMapMarker*\enspace Lisbon, Portugal
+    \enspace\textcolor{rule}{|}\enspace
+    \faPhone\enspace\href{tel:+351919125376}{(+351) 919 125 376}
+    \enspace\textcolor{rule}{|}\enspace
+    \faEnvelope\enspace\href{mailto:radesh.govind@gmail.com}{radesh.govind@gmail.com}
+    \enspace\textcolor{rule}{|}\enspace
+    \faLinkedin\enspace\href{https://linkedin.com/in/radesh-govind}{linkedin}
+    \enspace\textcolor{rule}{|}\enspace
+    \faGithub\enspace\href{https://github.com/radesh-govind}{github}%
+  }}
+\end{center}
+
+\vspace{2pt}
+\noindent\textcolor{navy}{\rule{\linewidth}{1pt}}
+\vspace{4pt}
+
+%──────────────────────────────────────────────────────────────
+%  SUMMARY
+%──────────────────────────────────────────────────────────────
+{\small\SUMMARY}
+
+%──────────────────────────────────────────────────────────────
+%  EDUCATION
+%──────────────────────────────────────────────────────────────
+\section{Education}
+
+\entry{ISEL --- Instituto Superior de Engenharia de Lisboa}
+      {BSc in Computer Science Engineering}{2023\,--\,July 2026}
+\vspace{1pt}
+\entry{Cambridge School}
+      {English First Certificate B2}{2019\,--\,2023}
+
+%──────────────────────────────────────────────────────────────
+%  TECHNICAL SKILLS
+%──────────────────────────────────────────────────────────────
+\section{Technical Skills}
+
+{\small
+\renewcommand{\arraystretch}{1.6}
+\begin{tabularx}{\linewidth}{@{}
+  >{\bfseries\color{navy}\raggedright\arraybackslash\hspace{0pt}}m{1.2in}
+  >{\raggedright\arraybackslash}X @{}}
+Languages       & \strut Kotlin, Java, TypeScript, JavaScript, Python, C, Prolog, Swift \\
+Backend         & \strut Spring Boot, Hono, Node.js, LangChain4j, Mistral API, RESTful APIs \\
+Database        & \strut PostgreSQL, MongoDB, Elasticsearch, pgvector, JDBI, JPA, JDBC \\
+DevOps          & \strut Docker, Docker Compose, CI/CD, Nginx, Prometheus, Grafana \\
+Mobile \& Edge  & \strut Android SDK, Jetpack Compose, KMP, Decompose, Cloudflare Workers \\
+Concepts        & \strut Distributed Systems, Concurrent Programming, Actor Model, Event-Driven Architecture, Cloud-Native, MVVM/MVI, TDD, DDD \\
+\end{tabularx}
+}
+
+%──────────────────────────────────────────────────────────────
+%  EXPERIENCE / PROJECTS
+%──────────────────────────────────────────────────────────────
+\section{Notable Projects}
+
+\project{U!REKA Play4Change \textnormal{\textcolor{soft}{\,---\,}}
+  \textnormal{\small Multiplatform Adaptive Learning Application}}{In Progress}
+%\projsub{BSc Final Year Project\,·\,European Alliance U!REKA\,·\,ISEL}
+\begin{itemize}\small
+  \item \textbf{Architected} a production-ready, cloud-native backend and Kotlin Multiplatform monorepo, containerized with \textbf{Docker}.
+
+  \item \textbf{Integrated} a cost-optimized \textbf{AI content pipeline} using \textbf{LangChain4j} and EU-hosted \textbf{Mistral APIs} .
+  \item \textbf{Implemented} full system observability and monitoring using \textbf{Prometheus and Grafana}.
+  \item \textbf{Secured} RESTful APIs using JWT and OAuth 2.0, utilizing \textbf{PostgreSQL and pgvector} for vector data persistence.
+
+\end{itemize}
+\vspace{4pt}
+
+\project{Multi-Player Real-Time Android Game}{Academic\,·\,Grade: 20/20}
+\begin{itemize}\small
+  \item Real-time Android game for up to 6 concurrent players --- Kotlin, Jetpack Compose, Spring Boot backend
+  \item SSE for live game-state push (no polling); state persisted in PostgreSQL; backend containerised with Docker
+  \item Complex concurrency managed with Coroutines, Flows, and Channels; structured concurrency to prevent race conditions
+  \item Ktor network layer enabling seamless switching between mock and production environments
+\end{itemize}
+
+\vspace{4pt}
+
+\project{AI Agent Interview Assistant}{Personal Project}
+\begin{itemize}\small
+  \item Edge-native stateful AI assistant on Cloudflare Workers --- an interactive curriculum for recruiters
+  \item LLM inference pipeline with Hono + Workers AI; state migrated from KV to \textbf{Durable Objects} via the Actor Model
+  \item Domain-Driven Design; enriched context metadata to sharpen prompt quality
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────
+%  LEADERSHIP
+%──────────────────────────────────────────────────────────────
+\section{Leadership \& Activities}
+
+{\small\noindent\textbf{FNKP --- Federação Nacional de Karaté de Portugal}
+\hfill{\textcolor{soft}{T\'ecnico de Arbitragem\,·\,Oficial de Mesa}}\\
+\textcolor{soft}{High-stakes decision-making and regulatory compliance at national-level events;
+communication, discipline, and conflict resolution under pressure.}}
+
+\end{document}

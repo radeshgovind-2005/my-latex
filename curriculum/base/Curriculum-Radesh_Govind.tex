@@ -1,0 +1,210 @@
+%==============================================================
+%  CV — Radesh Govind  (single page, all targets)
+%  pdflatex CV-Radesh_Govind.tex
+%==============================================================
+\documentclass[9.5pt, a4paper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[scaled=0.92]{helvet}
+\renewcommand\familydefault{\sfdefault}
+
+\usepackage[
+  top=0.50in, bottom=0.50in,
+  left=0.65in, right=0.65in
+]{geometry}
+
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{microtype}
+\usepackage{tabularx}
+\usepackage{parskip}
+\usepackage{array}
+
+%──────────────────────────────────────────────────────────────
+%  Palette
+%──────────────────────────────────────────────────────────────
+\definecolor{navy}{HTML}{1C2B4A}
+\definecolor{body}{HTML}{1F1F1F}
+\definecolor{soft}{HTML}{6B7280}
+\definecolor{rule}{HTML}{D1D5DB}
+\definecolor{accent}{HTML}{2563EB}
+
+\color{body}
+\hypersetup{urlcolor=accent, colorlinks=true}
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+%──────────────────────────────────────────────────────────────
+%  Section heading — uppercase label + rule
+%──────────────────────────────────────────────────────────────
+\titleformat{\section}
+  {\fontsize{10.5pt}{7.5pt}\selectfont\bfseries\color{soft}\raggedright}
+  {}{0em}{\MakeUppercase}
+  [\vspace{2pt}\textcolor{rule}{\rule{\linewidth}{0.4pt}}\vspace{0pt}]
+\titlespacing*{\section}{0pt}{7pt}{3pt}
+
+%──────────────────────────────────────────────────────────────
+%  Lists
+%──────────────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.1em,
+  itemsep=1.2pt,
+  topsep=2pt,
+  parsep=0pt,
+  label={\textcolor{soft}{\footnotesize--}}
+}
+
+%──────────────────────────────────────────────────────────────
+%  Macros
+%──────────────────────────────────────────────────────────────
+\newcommand{\entry}[3]{%
+  \noindent\textbf{\color{navy}#1}\hfill{\small\textcolor{soft}{#3}}\\[-2pt]
+  {\small\textcolor{soft}{#2}}\par\vspace{1pt}%
+}
+\newcommand{\project}[2]{%
+  \noindent{\textbf{\color{navy}#1}}\hfill{\small\textcolor{soft}{#2}}\par\vspace{1pt}%
+}
+\newcommand{\sep}{\enspace{\textcolor{rule}{|}}\enspace}
+
+%==============================================================
+\begin{document}
+\pagestyle{empty}
+
+%──────────────────────────────────────────────────────────────
+%  HEADER
+%──────────────────────────────────────────────────────────────
+\begin{center}
+  {\fontsize{23pt}{23pt}\selectfont\bfseries\color{navy} Radesh Govind - Software Engineer}\\[4pt]
+  {\footnotesize\textcolor{soft}{%
+    Lisbon, Portugal%
+    \sep\href{mailto:radesh.govind@gmail.com}{radesh.govind@gmail.com}%
+    \sep\href{tel:+351919125376}{+351 919 125 376}%
+    \sep\href{https://linkedin.com/in/radesh-govind}{linkedin.com/in/radesh-govind}%
+    \sep\href{https://github.com/radesh-govind}{github.com/radesh-govind}%
+  }}
+\end{center}
+
+\vspace{1pt}
+\noindent\textcolor{navy}{\rule{\linewidth}{0.8pt}}
+\vspace{4pt}
+
+%──────────────────────────────────────────────────────────────
+%  SUMMARY
+%──────────────────────────────────────────────────────────────
+{\small%
+Final-year BSc Computer Science Engineering student at ISEL Lisbon.
+Currently building a AI-powered Multiplatform Application for \href{https://ureka.eu/innovate/#euprojects}{\textbf{U!REKA}}.
+Strong in \textbf{Kotlin}, \textbf{Spring Boot}, \textbf{cloud-native architecture}, and production observability. 
+
+Open to Backend, Cloud, and AI engineering roles from \textbf{July 2026.}%
+}
+
+\vspace{2pt}
+
+%──────────────────────────────────────────────────────────────
+%  TECHNICAL SKILLS
+%──────────────────────────────────────────────────────────────
+\section{Technical Skills}
+{\small
+\renewcommand{\arraystretch}{1.55}
+\begin{tabularx}{\linewidth}{@{}
+  >{\bfseries\color{navy}\raggedright\arraybackslash}m{1.3in}
+  >{\raggedright\arraybackslash}X @{}}
+
+Languages        & Kotlin, Java, TypeScript, Python, JavaScript, C \\
+Backend          & Spring Boot, RESTful APIs,  AI Inference APIs, Node.js,
+                   LangChain4j  \\
+Data             & PostgreSQL, pgvector, MongoDB, JPA, JDBI, JDBC \\
+Infra \& DevOps  & Docker, Docker Compose, CI/CD, Prometheus, Grafana, Nginx \\
+Mobile           & Kotlin Multiplatform (KMP), Compose Multiplatform,
+                    Jetpack Compose \\
+Concepts         & Distributed Systems, Concurrency,
+                    Event-Driven Architecture,\\
+                   & Cloud-Native, MVVM/MVI, DDD, TDD \\
+\end{tabularx}
+}
+
+%──────────────────────────────────────────────────────────────
+%  PROJECTS
+%──────────────────────────────────────────────────────────────
+\section{Projects}
+
+%── Project 1 ─────────────────────────────────────────────────
+\project{U!REKA Play4Change \textnormal{\small\textcolor{soft}{%
+  --- Multiplatform Adaptive Learning Platform ·
+  BSc Final Year Project}}}{On Going}
+
+\begin{itemize}\small
+
+  \item \textbf{Engineered} a production-ready \textbf{RESTful} Spring Boot backend
+        \textbf{persisted} with PostgreSQL and \textbf{containerized} with Docker Compose.
+
+  \item \textbf{Built} a cost-optimised \textbf{AI inference pipeline} and on-demand
+        adaptive branching with similarity-based reuse.
+
+  \item \textbf{Instrumented} full Prometheus + Grafana \textbf{observability}.
+
+  \item \textbf{Architected} a Kotlin Multiplatform \textbf{monorepo}
+        with layered modules applying DDD and offline-first sync.
+
+\end{itemize}
+
+\vspace{3pt}
+
+%── Project 2 ─────────────────────────────────────────────────
+\project{Real-Time Multiplayer Android Game \textnormal{\small\textcolor{soft}{%
+  --- 6-Player Concurrent Backend}}}{Academic · Grade: 20/20}
+
+\begin{itemize}\small
+  \item \textbf{Spring Boot} backend + \textbf{PostgreSQL} persistence + \textbf{Docker};
+        \textbf{Server-Sent Events} for real-time game-state push (zero polling).
+  \item Concurrency via Kotlin \textbf{Coroutines, Flows, and Channels};
+        structured concurrency eliminating race conditions across 6 live sessions.
+  \item Ktor network layer with \textbf{swappable mock/production transports}
+        --- full offline testability without backend dependency.
+\end{itemize}
+
+\vspace{3pt}
+
+%── Project 3 ─────────────────────────────────────────────────
+\project{AI Interview Assistant \textnormal{\small\textcolor{soft}{%
+  --- Stateful Edge Agent on Cloudflare Workers}}}{Personal Project}
+
+\begin{itemize}\small
+  \item \textbf{Cloudflare Workers} + Hono + \textbf{Workers AI inference API};
+        session state migrated from KV to \textbf{Durable Objects}
+        (Actor Model) to eliminate concurrent-session race conditions.
+  \item Prompt metadata enrichment to sharpen \textbf{LLM inference quality}
+        without increasing token cost; deployed globally at the edge.
+\end{itemize}
+
+%──────────────────────────────────────────────────────────────
+%  EDUCATION
+%──────────────────────────────────────────────────────────────
+\section{Education}
+
+\entry
+  {ISEL --- Instituto Superior de Engenharia de Lisboa}
+  {BSc Computer Science Engineering ~·~ Technical avg. 18--20/20 ~·~ Mobile project: 20/20}
+  {2023 -- July 2026}
+
+\entry
+  {Cambridge English}
+  {First Certificate in English (B2) ~·~ Credential C3622995}
+  {2023}
+
+%──────────────────────────────────────────────────────────────
+%  LEADERSHIP
+%──────────────────────────────────────────────────────────────
+\section{Leadership \& Activities}
+
+{\small\noindent%
+\textbf{\color{navy}FNKP --- Federação Nacional de Karaté de Portugal}%
+\hfill\textcolor{soft}{Technical Arbitration Official · National Level}\\[1pt]
+\textcolor{soft}{High-stakes real-time decisions under pressure;
+regulatory compliance and conflict resolution at national competitions.}}
+
+\end{document}
