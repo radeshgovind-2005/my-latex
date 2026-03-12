@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1773351592.78259 "/Users/radeshgovind/my-latex/curriculum/a/CV-A-Radesh_Govind.tex" "CV-A-Radesh_Govind.pdf" "CV-A-Radesh_Govind" 1773351593.88911 0
-  "/Users/radeshgovind/my-latex/curriculum/a/CV-A-Radesh_Govind.tex" 1773351592.57948 10310 e9df3037f7ac481520e215f970e12526 ""
+["pdflatex"] 1773353331.84614 "/Users/radeshgovind/my-latex/curriculum/a/CV-A-Radesh_Govind.tex" "CV-A-Radesh_Govind.pdf" "CV-A-Radesh_Govind" 1773353332.74789 0
+  "/Users/radeshgovind/my-latex/curriculum/a/CV-A-Radesh_Govind.tex" 1773353331.63728 10314 f332f2a530b81ee6eab7d50560e46f05 ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/local/texlive/2026/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc" 1622837620 2906 e48aa7c95dea478a2e011bcb4f7878c9 ""
@@ -112,9 +112,9 @@
   "/usr/local/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1772542720 5541377 04880c840ca220163a28f1a3af0ee662 ""
   "/usr/local/texlive/2026/texmf-var/web2c/pdftex/pdflatex.fmt" 1772542652 3636762 0b8e65a8c2d5692e343d547380a85768 ""
   "/usr/local/texlive/2026/texmf.cnf" 1772409725 577 648cd9f92f9c0eac486f4c71c85cfbbe ""
-  "CV-A-Radesh_Govind.aux" 1773351593.76763 615 338bd66b0e8910aeb013be29f47b7f05 "pdflatex"
-  "CV-A-Radesh_Govind.out" 1773351593.76851 507 1f7aec8d20104d276ec34f3f97b91d72 "pdflatex"
-  "CV-A-Radesh_Govind.tex" 1773351592.57948 10310 e9df3037f7ac481520e215f970e12526 ""
+  "CV-A-Radesh_Govind.aux" 1773353332.646 615 338bd66b0e8910aeb013be29f47b7f05 "pdflatex"
+  "CV-A-Radesh_Govind.out" 1773353332.64668 507 1f7aec8d20104d276ec34f3f97b91d72 "pdflatex"
+  "CV-A-Radesh_Govind.tex" 1773353331.63728 10314 f332f2a530b81ee6eab7d50560e46f05 ""
   (generated)
   "CV-A-Radesh_Govind.aux"
   "CV-A-Radesh_Govind.log"
